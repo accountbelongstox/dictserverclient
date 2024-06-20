@@ -1,0 +1,97 @@
+├── .eslintrc.js
+├── .expo
+│   ├── devices.json
+│   ├── packager-info.json
+│   └── settings.json
+├── .gitignore
+├── .prettierrc.js
+├── app.json
+├── App.tsx
+├── assets
+├── babel.config.js
+├── metro.config.js
+├── package-lock.json
+├── package.bak.json
+├── package.json
+├── projectDirectoryPrinting.py
+├── src
+│   ├── api
+│   │   ├── authApi.tsx
+│   │   └── dictApi.tsx
+│   ├── assets
+│   │   ├── fonts
+│   │   ├── icons
+│   │   └── images
+│   ├── components
+│   │   ├── Article.tsx
+│   │   ├── Block.tsx
+│   │   ├── Button.tsx
+│   │   ├── Calendar.tsx
+│   │   ├── Checkbox.tsx
+│   │   ├── Dictlist.tsx
+│   │   ├── Image.tsx
+│   │   ├── index.tsx
+│   │   ├── Input.tsx
+│   │   ├── Modal.tsx
+│   │   ├── NaviButton.tsx
+│   │   ├── Product.tsx
+│   │   ├── Switch.tsx
+│   │   └── Text.tsx
+│   ├── constants
+│   │   ├── dark.ts
+│   │   ├── index.ts
+│   │   ├── light.ts
+│   │   ├── mocks.ts
+│   │   ├── regex.ts
+│   │   ├── theme.ts
+│   │   ├── token.ts
+│   │   ├── translations
+│   │   │   ├── en.json
+│   │   │   ├── fr.json
+│   │   │   ├── index.ts
+│   │   │   └── zh.json
+│   │   └── types
+│   │       ├── components.ts
+│   │       ├── dict.ts
+│   │       ├── index.ts
+│   │       └── theme.ts
+│   ├── hooks
+│   │   ├── index.ts
+│   │   ├── useData.tsx
+│   │   ├── useScreenOptions.tsx
+│   │   ├── useTheme.tsx
+│   │   └── useTranslation.tsx
+│   ├── navigation
+│   │   ├── App.tsx
+│   │   ├── Button.tsx
+│   │   ├── Menu - Copy.tsx
+│   │   ├── Menu.tsx
+│   │   ├── Screens - Copy.tsx
+│   │   └── Screens.tsx
+│   └── screens
+│       ├── About.tsx
+│       ├── Agreement.tsx
+│       ├── Articles.tsx
+│       ├── AuthLoading.tsx
+│       ├── Booking.tsx
+│       ├── Chat.tsx
+│       ├── Components.tsx
+│       ├── Dictlist.tsx
+│       ├── DictlistDevelop.tsx
+│       ├── Extras.tsx
+│       ├── Home.tsx
+│       ├── index.ts
+│       ├── Login.tsx
+│       ├── Notifications.tsx
+│       ├── NotificationsSettings.tsx
+│       ├── Privacy.tsx
+│       ├── Profile.tsx
+│       ├── Register.tsx
+│       ├── Rental.tsx
+│       ├── Rentals.tsx
+│       ├── Settings.tsx
+│       ├── Shopping.tsx
+│       └── Wordlist.tsx
+├── tsconfig.json
+├── upPackege.json
+└── yarn.lock

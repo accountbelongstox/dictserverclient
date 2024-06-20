@@ -1,0 +1,13 @@
+{
+  "name": "Translate",
+  "version": "python:3.9",
+  "description": "",
+  "author": "xyc",
+  "scripts": {
+    "test": "echo  &amp;&amp; exit 1"
+  },
+  "database": [
+  ],
+  "redis":[
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dictiongroups",
+  "info": {
+    "singularName": "dictiongroup",
+    "pluralName": "dictiongroups",
+    "displayName": "Dictiongroup",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "text",
+      "required": true
+    },
+    "namespace": {
+      "type": "string"
+    },
+    "gtp": {
+      "type": "string"
+    },
+    "wcount": {
+      "type": "integer"
+    },
+    "winclude_count": {
+      "type": "integer"
+    },
+    "origin_text": {
+      "type": "text"
+    },
+    "invalid_word_count": {
+      "type": "integer"
+    },
+    "wfrequency": {
+      "type": "json"
+    },
+    "winclude": {
+      "type": "json"
+    },
+    "wlink": {
+      "type": "json"
+    },
+    "valid_word": {
+      "type": "json"
+    },
+    "valid_word_count": {
+      "type": "integer"
+    },
+    "invalid_word": {
+      "type": "json"
+    }
+  }
+}

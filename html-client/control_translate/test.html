@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+
+<body>
+    <div id="thousandsofday_app">
+        <el-button @click="visible = true">设置“千语单词”用户名</el-button>
+        <el-dialog :visible.sync="visible" title="设置 千语单词 用户名" :before-close="handleClose">
+            <el-form ref="loginForm" :model="loginForm" label-width="80px">
+                <el-form-item label="用户名">
+                    <el-input v-model="loginForm.username"></el-input>
+                </el-form-item>
+                <el-form-item label="密码">
+                    <el-input type="password" v-model="loginForm.password"></el-input>
+                </el-form-item>
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="visible = false">取消</el-button>
+                <el-button type="primary" @click="submitForm">确定</el-button>
+            </div>
+        </el-dialog>
+    </div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue@2/dist/vue.js"></script>
+<!-- import JavaScript -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    new Vue({
+        el: '#thousandsofday_app',
+        data: function () {
+            return {
+                visible: false,
+                local_tokenname: 'doc_dict_username',
+                loginForm: {
+                    username: '',
+                    password: ''
+                }
+            }
+        },
+        methods: {
+            checkLoginStatus() {
+                const token = localStorage.getItem(this.local_tokenname);
+                if (!token) {
+                    this.visible = true;
+                    return false
+                } else {
+                    // 如果已经登录，则可以在这里执行其他逻辑
+                    return true
+                }
+            },
+            handleClose(done) {
+                this.visible = false;
+                done();
+            },
+            async submitForm() {
+                if(this.checkLoginStatus()){
+
+                }
+                if (this.loginForm.username) {
+
+                    console.log('set', this.loginForm.username)
+                    localStorage.setItem(this.local_tokenname, this.loginForm.username);
+                }
+                // const response = await axios.post('https://your-api-url.com/login', {
+
+                try {
+                    
+                        username: this.loginForm.username,
+                        password: this.loginForm.password
+                    });
+
+                    if (response.data.success) {
+                        localStorage.setItem("xxx_token", response.data.token);
+                        this.visible = false;
+                    } else {
+                        // 如果登录失败，可以在这里显示错误信息
+                        console.log("登录失败");
+                    }
+                } catch (error) {
+                    console.error("请求失败:", error);
+                }
+                // 这里可以添加登录逻辑    // 这里可以添加登录逻辑
+                console.log("提交表单");
+                // 假设服务器返回的数据结构为 { success: true, token: "xxx_token_value" }
+                const responseData = {
+                    success: true,
+                    token: "xxx_token_value"
+                };
+                if (responseData.success) {
+                    localStorage.setItem("xxx_token", responseData.token);
+                    this.visible = false;
+                } else {
+                    // 如果登录失败，可以在这里显示错误信息
+                    console.log("登录失败");
+                }
+            }
+        }
+    })
+</script>
+
+</html>

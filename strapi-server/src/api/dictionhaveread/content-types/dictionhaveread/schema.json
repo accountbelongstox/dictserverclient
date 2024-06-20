@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dictionhavereads",
+  "info": {
+    "singularName": "dictionhaveread",
+    "pluralName": "dictionhavereads",
+    "displayName": "Dictionhaveread",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uid": {
+      "type": "integer"
+    },
+    "read_ids": {
+      "type": "json"
+    }
+  }
+}

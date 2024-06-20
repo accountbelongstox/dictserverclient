@@ -1,0 +1,15 @@
+├── .expo
+├── assets
+├── src
+│   ├── api
+│   ├── assets
+│   │   ├── fonts
+│   │   ├── icons
+│   │   └── images
+│   ├── components
+│   ├── constants
+│   │   ├── translations
+│   │   └── types
+│   ├── hooks
+│   ├── navigation
+│   └── screens

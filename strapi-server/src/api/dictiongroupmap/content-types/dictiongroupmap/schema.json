@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dictiongroupmaps",
+  "info": {
+    "singularName": "dictiongroupmap",
+    "pluralName": "dictiongroupmaps",
+    "displayName": "Dictiongroupmap",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uid": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "group_map": {
+      "type": "json"
+    }
+  }
+}

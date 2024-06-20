@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dictionreadcounts",
+  "info": {
+    "singularName": "dictionreadcount",
+    "pluralName": "dictionreadcounts",
+    "displayName": "Dictionreadcount",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uid": {
+      "type": "integer"
+    },
+    "read_map": {
+      "type": "json"
+    }
+  }
+}
